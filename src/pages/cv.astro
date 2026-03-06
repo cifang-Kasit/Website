@@ -6,7 +6,7 @@ import education from '../data/education.json';
 import experience from '../data/experience.json';
 
 const baseUrl = import.meta.env.BASE_URL;
-const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
+const withBase = (path: string) => `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 ---
 
 <PageLayout title={`${profile.name} - CV`} description="Curriculum Vitae">

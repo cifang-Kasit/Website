@@ -15,7 +15,7 @@ interface Props {
 
 const { title, description, image, tags, links } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
-const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
+const withBase = (path: string) => `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 ---
 
 <article class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-white transition-all hover:-translate-y-0.5 hover:shadow-lg">
