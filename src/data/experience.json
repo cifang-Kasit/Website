@@ -1,32 +1,30 @@
 [
   {
-    "company": "Adobe Research",
-    "role": "Research Scientist Intern",
-    "period": "Summer 2025",
+    "company": "KAIST Research Projects",
+    "role": "Researcher",
+    "period": "2022.09 - 2023.09",
     "description": [
-      "Built evaluation pipelines for multimodal models on document and design tasks",
-      "Proposed calibration metrics that improved robustness under domain shift",
-      "Collaborated with cross-functional teams to ship internal research tooling"
+      "Developed intelligent road and traffic situation detection technology using mobile infrastructure image sensors (crack severity detection).",
+      "Worked on integrated software framework for NPU-based computation of time-series big-data deep learning applications.",
+      "Contributed to C-ITS large-scale data processing algorithms (majority coder: 29/35 modules)."
     ]
   },
   {
-    "company": "ByteDance",
-    "role": "Machine Learning Engineer Intern",
-    "period": "Summer 2023",
+    "company": "Graduate Course Support, KAIST",
+    "role": "Teaching Assistant",
+    "period": "2023",
     "description": [
-      "Developed ranking model features for recommendation systems",
-      "Reduced model serving latency by 33% through quantization and operator fusion",
-      "Implemented online-offline consistency checks for feature pipelines"
+      "Teaching assistant for the graduate-level Scientific Writing course."
     ]
   },
   {
-    "company": "Intelligent Systems Lab, Tsinghua University",
+    "company": "Transportation Safety Research",
     "role": "Research Assistant",
-    "period": "2022 - 2024",
+    "period": "2021 - Present",
     "description": [
-      "Conducted research on graph learning for combinatorial decision-making",
-      "Maintained open-source optimization benchmark suite",
-      "Mentored junior students on reproducible ML experiment design"
+      "Worked on pedestrian trajectory prediction and surrogate safety measures at non-signalized intersections.",
+      "Built deep learning models for traffic speed prediction under sparse data conditions.",
+      "Published and presented related work at TRB, T-ITS, and TRIP venues."
     ]
   }
 ]

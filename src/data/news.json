@@ -1,43 +1,43 @@
 [
   {
-    "date": "02/20/2026",
-    "content": "Our paper \"Representation Alignment for Scientific Multimodal Models\" was accepted by ICML 2026 (Oral).",
-    "paperTitle": "Representation Alignment for Scientific Multimodal Models",
-    "paperUrl": "https://arxiv.org/abs/2602.12345",
-    "venue": "ICML 2026",
-    "venueUrl": "https://icml.cc/",
-    "badge": "Oral"
-  },
-  {
-    "date": "01/10/2026",
-    "content": "I will serve as a student volunteer at AAAI 2026 and present our work on efficient scientific transformers.",
-    "paperTitle": "Sparse Scientific Transformers for PDE Surrogates",
-    "paperUrl": "https://arxiv.org/abs/2511.02311",
-    "venue": "AAAI 2026",
-    "venueUrl": "https://aaai.org/",
-    "badge": "Poster"
-  },
-  {
-    "date": "11/20/2025",
-    "content": "I gave a talk at the NeurIPS 2025 AI for Science Workshop on decision-aware optimization.",
-    "paperTitle": null,
+    "date": "11/01/2025",
+    "content": "Submitted a journal manuscript on integrating deep learning-based motion prediction with extreme value theory for crash risk estimation.",
+    "paperTitle": "Integrating Deep Learning-Based Motion Prediction into Extreme Value Theory: Incorporating Motion Heterogeneity and Interaction Behavior into Crash Risk Estimation",
     "paperUrl": null,
-    "venue": "NeurIPS 2025 Workshop",
-    "venueUrl": "https://neurips.cc/",
+    "venue": "Analytic Methods in Accident Research",
+    "venueUrl": null,
     "badge": null
   },
   {
-    "date": "08/30/2025",
-    "content": "Our paper on robust graph optimization was accepted by NeurIPS 2025.",
-    "paperTitle": "Robust Graph Policies for Combinatorial Optimization",
-    "paperUrl": "https://arxiv.org/abs/2508.10101",
-    "venue": "NeurIPS 2025",
-    "venueUrl": "https://neurips.cc/",
-    "badge": "Poster"
+    "date": "10/21/2025",
+    "content": "Paper accepted at Transportation Research Interdisciplinary Perspectives on a novel surrogate safety metric for pedestrian potential risk evaluation.",
+    "paperTitle": "Predicted Lane-based Time to Collision: A Novel Surrogate Safety Measure for Pedestrian Potential Risk Evaluation at Non-Signalized Intersections",
+    "paperUrl": null,
+    "venue": "Transportation Research Interdisciplinary Perspectives",
+    "venueUrl": null,
+    "badge": null
   },
   {
-    "date": "06/15/2025",
-    "content": "Started a summer research internship at Adobe Research, focusing on vision-language model evaluation.",
+    "date": "01/06/2025",
+    "content": "Presented a lectern-session paper at Transportation Research Board Annual Meeting.",
+    "paperTitle": "A Surrogate Safety Measure at Non-signalized Intersections Based on Probability Trajectory Prediction",
+    "paperUrl": null,
+    "venue": "TRB Annual Meeting",
+    "venueUrl": "https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx",
+    "badge": null
+  },
+  {
+    "date": "10/23/2023",
+    "content": "Presented large-scale road network traffic speed prediction work at the 34th KKHTCNN Symposium on Civil Engineering.",
+    "paperTitle": "A Comprehensive Dynamic Spatial-Temporal Deep Learning Framework for Predicting Traffic Speed based on Large-Scale Road Networks",
+    "paperUrl": null,
+    "venue": "34th KKHTCNN Symposium on Civil Engineering",
+    "venueUrl": null,
+    "badge": null
+  },
+  {
+    "date": "11/01/2021",
+    "content": "Won third prize in Transportation Research Board Data Challenge 2022.",
     "paperTitle": null,
     "paperUrl": null,
     "venue": null,
@@ -45,17 +45,8 @@
     "badge": null
   },
   {
-    "date": "03/01/2025",
-    "content": "Our work on scalable optimization under uncertainty received a spotlight at ICLR 2025.",
-    "paperTitle": "Scalable Optimization under Distribution Shift",
-    "paperUrl": "https://arxiv.org/abs/2502.00999",
-    "venue": "ICLR 2025",
-    "venueUrl": "https://iclr.cc/",
-    "badge": "Spotlight"
-  },
-  {
-    "date": "09/23/2024",
-    "content": "Started the Ph.D. program in Computer Science at UC San Diego.",
+    "date": "08/01/2020",
+    "content": "Started master program in Civil and Environmental Engineering at KAIST.",
     "paperTitle": null,
     "paperUrl": null,
     "venue": null,

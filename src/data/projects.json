@@ -1,45 +1,45 @@
 [
   {
-    "title": "RouteOpt Bench",
-    "description": "A benchmark suite for learning-based vehicle routing and scheduling, with standardized datasets, baselines, and reproducibility scripts.",
+    "title": "Crack Severity Detection from Mobile Infrastructure Images",
+    "description": "Developed a crack severity detection module for intelligent road and traffic situation detection using mobile infrastructure image sensors.",
     "image": "/images/project-placeholder.svg",
-    "tags": ["Python", "PyTorch", "Optimization"],
+    "tags": ["Computer Vision", "Road Safety", "Deep Learning"],
     "links": {
-      "github": "https://github.com/linzhang-ai/routeopt-bench",
-      "demo": "https://linzhang.ai/routeopt-bench",
-      "paper": "https://arxiv.org/abs/2508.10101"
-    }
-  },
-  {
-    "title": "NAS-Lite",
-    "description": "A lightweight neural architecture search toolkit focused on cost-aware model selection for scientific and edge workloads.",
-    "image": "/images/project-placeholder.svg",
-    "tags": ["AutoML", "JAX", "Model Efficiency"],
-    "links": {
-      "github": "https://github.com/linzhang-ai/nas-lite",
-      "demo": "https://linzhang.ai/nas-lite",
-      "paper": "https://arxiv.org/abs/2511.02311"
-    }
-  },
-  {
-    "title": "SciFusion",
-    "description": "A multimodal training framework for scientific machine learning with unified dataloading, alignment losses, and experiment tracking.",
-    "image": "/images/project-placeholder.svg",
-    "tags": ["Multimodal", "PyTorch", "MLOps"],
-    "links": {
-      "github": "https://github.com/linzhang-ai/scifusion",
+      "github": null,
       "demo": null,
-      "paper": "https://arxiv.org/abs/2602.12345"
+      "paper": null
     }
   },
   {
-    "title": "Academic Portfolio Template",
-    "description": "A production-ready Astro template for researchers, including publications, projects, blog, and automated GitHub Pages deployment.",
+    "title": "NPU-based Time-series Big-data Deep Learning Framework",
+    "description": "Contributed to an integrated software framework for NPU-based computation of time-series deep learning applications.",
     "image": "/images/project-placeholder.svg",
-    "tags": ["Astro", "Tailwind CSS", "TypeScript"],
+    "tags": ["NPU", "Time-series", "Big Data"],
     "links": {
-      "github": "https://github.com/linzhang-ai/academic-portfolio-template",
-      "demo": "https://linzhang-ai.github.io/academic-portfolio-template/",
+      "github": null,
+      "demo": null,
+      "paper": null
+    }
+  },
+  {
+    "title": "C-ITS Large-scale Data Processing Algorithms",
+    "description": "Built large-scale C-ITS data processing algorithms and implemented most of the module code (29 out of 35).",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["C-ITS", "Data Processing", "Algorithm Development"],
+    "links": {
+      "github": null,
+      "demo": null,
+      "paper": null
+    }
+  },
+  {
+    "title": "Pedestrian Safety Risk Evaluation Framework",
+    "description": "A deep learning framework that evaluates pedestrian potential risk at non-signalized intersections using predicted surrogate safety metrics.",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["Trajectory Prediction", "Transportation Safety", "Surrogate Safety"],
+    "links": {
+      "github": null,
+      "demo": null,
       "paper": null
     }
   }

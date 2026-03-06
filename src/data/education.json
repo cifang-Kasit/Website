@@ -1,23 +1,23 @@
 [
   {
-    "school": "University of California, San Diego",
-    "degree": "Ph.D. in Computer Science",
-    "period": "2024 - Present",
-    "description": "Research focus on machine learning systems and decision-focused optimization.",
-    "advisor": "Prof. Julian McAuley"
+    "school": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "degree": "Ph.D. in Civil and Environmental Engineering",
+    "period": "2022.06 - Present",
+    "description": "Doctoral student.",
+    "advisor": "Prof. Inhi Kim"
   },
   {
-    "school": "Tsinghua University",
-    "degree": "M.S. in Data Science",
-    "period": "2022 - 2024",
-    "description": "Thesis: Learning-based Solvers for Large-scale Routing Problems.",
-    "advisor": "Prof. Wei Wang"
+    "school": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "degree": "M.S. in Civil and Environmental Engineering",
+    "period": "2020.08 - 2022.06",
+    "description": "Dissertation: Framework for Pedestrian Safety Index Analyze Using Surrogate Safety Measurement from CCTV Dataset.",
+    "advisor": "Prof. Hwasoo Yeo"
   },
   {
-    "school": "Zhejiang University",
-    "degree": "B.S. in Computer Science",
-    "period": "2018 - 2022",
-    "description": "Graduated with first-class honors. Minor in Applied Mathematics.",
+    "school": "Israel Institute of Technology (Technion)",
+    "degree": "Bachelor of Civil and Environmental Engineering",
+    "period": "2016.08 - 2020.08",
+    "description": "Overall GPA: 89.6 / 100.",
     "advisor": null
   }
 ]

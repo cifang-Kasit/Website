@@ -11,12 +11,12 @@ import experience from '../data/experience.json';
 
   <div class="mb-6">
     <a
-      href="/files/cv.pdf"
+      href="/files/cv.docx"
       target="_blank"
       class="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[var(--color-accent-dark)] no-underline"
     >
       <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-      Download PDF
+      Download CV
     </a>
   </div>
 
@@ -71,7 +71,7 @@ import experience from '../data/experience.json';
       <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
         <h4 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Programming Languages</h4>
         <div class="flex flex-wrap gap-1.5">
-          {['Python', 'C++', 'TypeScript', 'SQL', 'Bash'].map((skill) => (
+          {['Python', 'C++', 'MATLAB'].map((skill) => (
             <span class="rounded-full bg-[var(--color-primary)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-primary)]">{skill}</span>
           ))}
         </div>
@@ -79,7 +79,7 @@ import experience from '../data/experience.json';
       <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
         <h4 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Frameworks & Tools</h4>
         <div class="flex flex-wrap gap-1.5">
-          {['PyTorch', 'JAX', 'Ray', 'Docker', 'Kubernetes', 'Weights & Biases'].map((skill) => (
+          {['PyTorch', 'TensorFlow', 'Computer Vision', 'Trajectory Prediction'].map((skill) => (
             <span class="rounded-full bg-[var(--color-accent)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-accent-dark)]">{skill}</span>
           ))}
         </div>
@@ -90,10 +90,10 @@ import experience from '../data/experience.json';
   <CVSection title="Awards & Honors">
     <div class="space-y-3">
       {[
-        { award: 'NeurIPS Scholar Award', year: '2025' },
-        { award: 'Outstanding Graduate Student Fellowship, Tsinghua University', year: '2024' },
-        { award: 'National Scholarship (Top 1%), Zhejiang University', year: '2021' },
-        { award: 'First Prize, Mathematical Modeling Competition', year: '2020' },
+        { award: 'Third prize in Transportation Research Board Data Challenge 2022', year: '2021-2022' },
+        { award: 'Daewoong AI Big Data Scholarship (5th Batch)', year: '2022' },
+        { award: 'Daewoong Foundation AI BIGDATA Global Scholarship', year: '2023' },
+        { award: 'Outstanding Papers at the Joint Conference of KTA and KSULUP', year: '2024' },
       ].map((item) => (
         <div class="flex items-start justify-between gap-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3">
           <span class="text-sm">{item.award}</span>
@@ -106,8 +106,8 @@ import experience from '../data/experience.json';
   <CVSection title="Languages">
     <div class="flex flex-wrap gap-3">
       {[
-        { lang: 'Chinese', level: 'Native' },
         { lang: 'English', level: 'Professional' },
+        { lang: 'Korean', level: 'Working proficiency' },
       ].map((item) => (
         <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2">
           <span class="text-sm font-medium text-[var(--color-primary)]">{item.lang}</span>

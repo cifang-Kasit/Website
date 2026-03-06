@@ -1,31 +1,30 @@
 [
   {
-    "title": "Decision-focused Combinatorial Optimization",
-    "description": "I develop learning-to-optimize methods for NP-hard routing and allocation problems. The goal is to improve decision quality under uncertainty while preserving practical runtime constraints.",
+    "title": "Deep Learning for Pedestrian Safety",
+    "description": "Developing trajectory prediction and surrogate safety measurement methods to evaluate pedestrian potential risk at non-signalized intersections.",
     "image": "/images/research-placeholder.svg",
-    "keywords": ["Reinforcement Learning", "Graph Policies", "Operations Research"],
+    "keywords": ["Pedestrian Safety", "Trajectory Prediction", "Surrogate Safety"],
     "papers": [
-      { "title": "Robust Graph Policies for Combinatorial Optimization", "url": "https://arxiv.org/abs/2508.10101" },
-      { "title": "Scalable Optimization under Distribution Shift", "url": "https://arxiv.org/abs/2502.00999" }
+      { "title": "Evaluation of Pedestrian Future Conflict at Non-signalized Intersections based on Probabilistic Trajectory Prediction", "url": "" },
+      { "title": "Predicted Lane-based Time to Collision: A Novel Surrogate Safety Measure for Pedestrian Potential Risk Evaluation at Non-Signalized Intersections", "url": "" }
     ]
   },
   {
-    "title": "Efficient Scientific Foundation Models",
-    "description": "I investigate sparse architectures and compression-aware training to build scientific models that are both accurate and efficient on limited compute.",
+    "title": "Spatiotemporal Transportation Data Modeling",
+    "description": "Building spatial-temporal deep learning frameworks for large-scale road network speed prediction and mobility analytics under data sparsity.",
     "image": "/images/research-placeholder.svg",
-    "keywords": ["Sparse Transformers", "Model Compression", "Hardware-aware Training"],
+    "keywords": ["Spatiotemporal Modeling", "Traffic Speed Prediction", "Variational Autoencoder"],
     "papers": [
-      { "title": "Sparse Scientific Transformers for PDE Surrogates", "url": "https://arxiv.org/abs/2511.02311" },
-      { "title": "A Practical Survey of Neural Architecture Search in Science", "url": "https://arxiv.org/abs/2409.08123" }
+      { "title": "A Comprehensive Dynamic Spatial-Temporal Deep Learning Framework for Predicting Traffic Speed based on Large-Scale Road Networks", "url": "" }
     ]
   },
   {
-    "title": "Multimodal Learning for Scientific Data",
-    "description": "My recent work focuses on aligning text, simulation outputs, and structured measurements into robust shared representations for downstream forecasting and control.",
+    "title": "Generative AI and Mobility Safety",
+    "description": "Applying deep learning and probabilistic modeling to transportation safety analysis, including crash risk estimation and motion heterogeneity modeling.",
     "image": "/images/research-placeholder.svg",
-    "keywords": ["Multimodal", "Representation Learning", "Scientific ML"],
+    "keywords": ["Crash Risk Estimation", "Probabilistic Modeling", "Transportation AI"],
     "papers": [
-      { "title": "Representation Alignment for Scientific Multimodal Models", "url": "https://arxiv.org/abs/2602.12345" }
+      { "title": "Integrating Deep Learning-Based Motion Prediction into Extreme Value Theory: Incorporating Motion Heterogeneity and Interaction Behavior into Crash Risk Estimation", "url": "" }
     ]
   }
 ]

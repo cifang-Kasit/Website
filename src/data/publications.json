@@ -1,80 +1,80 @@
 [
   {
-    "title": "Representation Alignment for Scientific Multimodal Models",
-    "authors": ["Mia Sun", "**Lin Zhang**", "Daniel Kim"],
-    "venue": "ICML 2026",
-    "year": 2026,
-    "type": "conference",
-    "badge": "Oral",
-    "links": {
-      "pdf": "https://arxiv.org/abs/2602.12345",
-      "code": "https://github.com/linzhang-ai/scimodal-align",
-      "project": null
-    }
-  },
-  {
-    "title": "Sparse Scientific Transformers for PDE Surrogates",
-    "authors": ["**Lin Zhang**", "Qian Liu", "Rajat Menon"],
-    "venue": "AAAI 2026",
-    "year": 2026,
-    "type": "conference",
-    "badge": "Poster",
-    "links": {
-      "pdf": "https://arxiv.org/abs/2511.02311",
-      "code": "https://github.com/linzhang-ai/sparse-sci-transformer",
-      "project": "https://linzhang.ai/sparse-sci-transformer"
-    }
-  },
-  {
-    "title": "Robust Graph Policies for Combinatorial Optimization",
-    "authors": ["**Lin Zhang**", "Ethan Park", "Sofia Tang"],
-    "venue": "NeurIPS 2025",
+    "title": "Evaluation of Pedestrian Future Conflict at Non-signalized Intersections based on Probabilistic Trajectory Prediction",
+    "authors": ["**Tengfeng Lin**", "Zhixiong Jin", "Hwasoo Yeo", "Inhi Kim"],
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
     "year": 2025,
-    "type": "conference",
-    "badge": "Poster",
+    "type": "journal",
+    "badge": null,
     "links": {
-      "pdf": "https://arxiv.org/abs/2508.10101",
-      "code": "https://github.com/linzhang-ai/robust-graph-policy",
-      "project": "https://linzhang.ai/robust-graph-policy"
-    }
-  },
-  {
-    "title": "Scalable Optimization under Distribution Shift",
-    "authors": ["Grace Kim", "**Lin Zhang**", "Henry Wu"],
-    "venue": "ICLR 2025",
-    "year": 2025,
-    "type": "conference",
-    "badge": "Spotlight",
-    "links": {
-      "pdf": "https://arxiv.org/abs/2502.00999",
+      "pdf": null,
       "code": null,
       "project": null
     }
   },
   {
-    "title": "A Practical Survey of Neural Architecture Search in Science",
-    "authors": ["**Lin Zhang**", "Ivy Chen"],
-    "venue": "ACM Computing Surveys",
+    "title": "Predicted Lane-based Time to Collision: A Novel Surrogate Safety Measure for Pedestrian Potential Risk Evaluation at Non-Signalized Intersections",
+    "authors": ["**Tengfeng Lin**", "Zhixiong Jin", "Seongjin Choi", "Hwasoo Yeo"],
+    "venue": "Transportation Research Interdisciplinary Perspectives",
+    "year": 2025,
+    "type": "journal",
+    "badge": null,
+    "links": {
+      "pdf": null,
+      "code": null,
+      "project": null
+    }
+  },
+  {
+    "title": "Vehiclectron: Estimating Road Vehicle's Cuboid using Deep Learning and Road Geometry Information in Mono-Vision Environment",
+    "authors": ["Byeongjoon Noh", "**Tengfeng Lin**", "Sungju Lee", "Taikyeong Jeong"],
+    "venue": "Sensors",
     "year": 2024,
     "type": "journal",
     "badge": null,
     "links": {
-      "pdf": "https://arxiv.org/abs/2409.08123",
+      "pdf": null,
       "code": null,
       "project": null
     }
   },
   {
-    "title": "Decision-aware Reinforcement Learning for Robotic Control",
-    "authors": ["Jack Ma", "**Lin Zhang**", "Karen Zhao"],
-    "venue": "ICRA 2024",
+    "title": "A Surrogate Safety Measure at Non-signalized Intersections Based on Probability Trajectory Prediction",
+    "authors": ["**Tengfeng Lin**", "Zhixiong Jin", "Hwasoo Yeo", "Inhi Kim"],
+    "venue": "Transportation Research Board Annual Meeting (Lectern Session)",
+    "year": 2025,
+    "type": "conference",
+    "badge": null,
+    "links": {
+      "pdf": null,
+      "code": null,
+      "project": null
+    }
+  },
+  {
+    "title": "Predicted Relative Time-to-Collision: Evaluating Pedestrian Potential Risk at Non-Signalized Intersections",
+    "authors": ["**Tengfeng Lin**", "Zhixiong Jin", "Hwasoo Yeo", "Inhi Kim"],
+    "venue": "International Co-operation on Theories and Concepts in Traffic Safety",
     "year": 2024,
     "type": "conference",
-    "badge": "Best Paper",
+    "badge": null,
     "links": {
-      "pdf": "https://arxiv.org/abs/2403.10444",
-      "code": "https://github.com/linzhang-ai/rl-robot-control",
-      "project": "https://linzhang.ai/rl-robot-control"
+      "pdf": null,
+      "code": null,
+      "project": null
+    }
+  },
+  {
+    "title": "A Comprehensive Dynamic Spatial-Temporal Deep Learning Framework for Predicting Traffic Speed based on Large-Scale Road Networks",
+    "authors": ["**Tengfeng Lin**", "Peijia Pok", "Hwasoo Yeo"],
+    "venue": "34th KKHTCNN Symposium on Civil Engineering",
+    "year": 2023,
+    "type": "conference",
+    "badge": null,
+    "links": {
+      "pdf": null,
+      "code": null,
+      "project": null
     }
   }
 ]
