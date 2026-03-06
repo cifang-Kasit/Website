@@ -2,6 +2,9 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import NewsTimeline from '../components/NewsTimeline.astro';
 import profile from '../data/profile.json';
+
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
 ---
 
 <PageLayout title={`${profile.name} - Home`} description={profile.bio}>
@@ -25,13 +28,13 @@ import profile from '../data/profile.json';
   <div class="mb-8">
     <h5 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Find my works:</h5>
     <div class="flex flex-wrap gap-2">
-      <a href="/publications/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+      <a href={withBase('/publications/')} class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
         Publications
       </a>
-      <a href="/research/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+      <a href={withBase('/research/')} class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
         Research
       </a>
-      <a href="/projects/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+      <a href={withBase('/projects/')} class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
         Projects
       </a>
     </div>

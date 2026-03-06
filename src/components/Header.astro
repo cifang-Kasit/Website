@@ -10,12 +10,20 @@ const navLinks = [
   { href: '/blog/', label: 'BLOG' },
 ];
 
-const currentPath = Astro.url.pathname;
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
+const normalizedPathname = Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const routePath = normalizedPathname.startsWith(normalizedBase)
+  ? normalizedPathname.slice(normalizedBase.length - 1) || '/'
+  : normalizedPathname;
 ---
 
 <header class="sticky top-0 z-50 bg-[var(--color-primary)] shadow-md">
   <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-8">
-    <a href="/" class="text-base font-bold tracking-wide text-white no-underline hover:text-[var(--color-accent)] sm:text-lg">
+    <a href={withBase('/')} class="text-base font-bold tracking-wide text-white no-underline hover:text-[var(--color-accent)] sm:text-lg">
       {profile.name}
     </a>
 
@@ -33,11 +41,11 @@ const currentPath = Astro.url.pathname;
 
     <ul class="hidden items-center gap-1 lg:flex">
       {navLinks.map(({ href, label }) => {
-        const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+        const isActive = routePath === href || (href !== '/' && routePath.startsWith(href));
         return (
           <li>
             <a
-              href={href}
+              href={withBase(href)}
               class:list={[
                 'rounded px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors no-underline',
                 isActive
@@ -56,11 +64,11 @@ const currentPath = Astro.url.pathname;
   <div id="mobile-menu" class="hidden border-t border-white/10 lg:hidden">
     <ul class="flex flex-col px-4 py-2">
       {navLinks.map(({ href, label }) => {
-        const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+        const isActive = routePath === href || (href !== '/' && routePath.startsWith(href));
         return (
           <li>
             <a
-              href={href}
+              href={withBase(href)}
               class:list={[
                 'block rounded px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors no-underline',
                 isActive

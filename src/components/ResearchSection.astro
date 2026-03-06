@@ -13,10 +13,12 @@ interface Props {
 }
 
 const { title, description, image, keywords, papers } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
 ---
 
 <div class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] transition-shadow hover:shadow-lg">
-  <img src={image} alt={title} class="h-48 w-full object-cover" />
+  <img src={withBase(image)} alt={title} class="h-48 w-full object-cover" />
   <div class="p-5">
     <h3 class="mb-2 text-lg font-bold text-[var(--color-primary)]">{title}</h3>
     <p class="mb-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">{description}</p>

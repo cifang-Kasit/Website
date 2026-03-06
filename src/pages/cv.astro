@@ -4,6 +4,9 @@ import CVSection from '../components/CVSection.astro';
 import profile from '../data/profile.json';
 import education from '../data/education.json';
 import experience from '../data/experience.json';
+
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\//, '')}`;
 ---
 
 <PageLayout title={`${profile.name} - CV`} description="Curriculum Vitae">
@@ -11,7 +14,7 @@ import experience from '../data/experience.json';
 
   <div class="mb-6">
     <a
-      href="/files/cv.docx"
+      href={withBase('/files/cv.docx')}
       target="_blank"
       class="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[var(--color-accent-dark)] no-underline"
     >
