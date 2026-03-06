@@ -1,0 +1,10 @@
+---
+import profile from '../data/profile.json';
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-[var(--color-border)] bg-[var(--color-primary)] py-6 text-center text-sm text-gray-300">
+  <div class="mx-auto max-w-6xl px-4">
+    <p>&copy; {year} {profile.name} | {profile.affiliation}</p>
+  </div>
+</footer>

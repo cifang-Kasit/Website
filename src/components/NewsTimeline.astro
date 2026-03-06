@@ -1,0 +1,23 @@
+---
+import NewsItem from './NewsItem.astro';
+import news from '../data/news.json';
+---
+
+<section>
+  <h3 class="mb-4 text-lg font-bold text-[var(--color-primary)]">Recent News</h3>
+  <div class="space-y-0">
+    {news.map((item) => (
+      <NewsItem
+        date={item.date}
+        content={item.content}
+        paperTitle={item.paperTitle}
+        paperUrl={item.paperUrl}
+        venue={item.venue}
+        venueUrl={item.venueUrl}
+        badge={item.badge}
+      >
+        {item.content}
+      </NewsItem>
+    ))}
+  </div>
+</section>

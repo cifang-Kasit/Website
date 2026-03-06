@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Academic Portfolio</title>
+  <desc id="desc">Open Graph preview image for the personal academic website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#1E2A36" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="72" y="72" width="1056" height="486" rx="24" fill="#FFFFFF" fill-opacity="0.08" />
+  <text x="120" y="280" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700">
+    Academic Portfolio
+  </text>
+  <text x="120" y="350" fill="#18BC9C" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="600">
+    Research · Publications · Projects · Blog
+  </text>
+</svg>

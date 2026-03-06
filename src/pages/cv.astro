@@ -1,0 +1,119 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import CVSection from '../components/CVSection.astro';
+import profile from '../data/profile.json';
+import education from '../data/education.json';
+import experience from '../data/experience.json';
+---
+
+<PageLayout title={`${profile.name} - CV`} description="Curriculum Vitae">
+  <h1 class="mb-6 text-2xl font-bold text-[var(--color-primary)]">Curriculum Vitae</h1>
+
+  <div class="mb-6">
+    <a
+      href="/files/cv.pdf"
+      target="_blank"
+      class="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[var(--color-accent-dark)] no-underline"
+    >
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      Download PDF
+    </a>
+  </div>
+
+  <CVSection title="Education">
+    <div class="space-y-4">
+      {education.map((edu) => (
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+          <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h4 class="font-semibold text-[var(--color-primary)]">{edu.degree}</h4>
+              <p class="text-sm text-[var(--color-text-secondary)]">{edu.school}</p>
+            </div>
+            <span class="shrink-0 text-sm font-medium text-[var(--color-accent-dark)]">{edu.period}</span>
+          </div>
+          {edu.description && <p class="mt-2 text-sm text-[var(--color-text-secondary)]">{edu.description}</p>}
+          {edu.advisor && <p class="mt-1 text-sm text-[var(--color-text-secondary)]">Advisor: {edu.advisor}</p>}
+        </div>
+      ))}
+    </div>
+  </CVSection>
+
+  <CVSection title="Work Experience">
+    <div class="space-y-4">
+      {experience.map((exp) => (
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+          <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h4 class="font-semibold text-[var(--color-primary)]">{exp.role}</h4>
+              <p class="text-sm text-[var(--color-text-secondary)]">{exp.company}</p>
+            </div>
+            <span class="shrink-0 text-sm font-medium text-[var(--color-accent-dark)]">{exp.period}</span>
+          </div>
+          {Array.isArray(exp.description) ? (
+            <ul class="mt-2 space-y-1">
+              {exp.description.map((item) => (
+                <li class="flex items-start gap-2 text-sm text-[var(--color-text-secondary)]">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p class="mt-2 text-sm text-[var(--color-text-secondary)]">{exp.description}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  </CVSection>
+
+  <CVSection title="Skills">
+    <div class="grid gap-4 sm:grid-cols-2">
+      <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+        <h4 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Programming Languages</h4>
+        <div class="flex flex-wrap gap-1.5">
+          {['Python', 'C++', 'TypeScript', 'SQL', 'Bash'].map((skill) => (
+            <span class="rounded-full bg-[var(--color-primary)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-primary)]">{skill}</span>
+          ))}
+        </div>
+      </div>
+      <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+        <h4 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Frameworks & Tools</h4>
+        <div class="flex flex-wrap gap-1.5">
+          {['PyTorch', 'JAX', 'Ray', 'Docker', 'Kubernetes', 'Weights & Biases'].map((skill) => (
+            <span class="rounded-full bg-[var(--color-accent)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-accent-dark)]">{skill}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </CVSection>
+
+  <CVSection title="Awards & Honors">
+    <div class="space-y-3">
+      {[
+        { award: 'NeurIPS Scholar Award', year: '2025' },
+        { award: 'Outstanding Graduate Student Fellowship, Tsinghua University', year: '2024' },
+        { award: 'National Scholarship (Top 1%), Zhejiang University', year: '2021' },
+        { award: 'First Prize, Mathematical Modeling Competition', year: '2020' },
+      ].map((item) => (
+        <div class="flex items-start justify-between gap-4 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3">
+          <span class="text-sm">{item.award}</span>
+          <span class="shrink-0 text-sm font-medium text-[var(--color-accent-dark)]">{item.year}</span>
+        </div>
+      ))}
+    </div>
+  </CVSection>
+
+  <CVSection title="Languages">
+    <div class="flex flex-wrap gap-3">
+      {[
+        { lang: 'Chinese', level: 'Native' },
+        { lang: 'English', level: 'Professional' },
+      ].map((item) => (
+        <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2">
+          <span class="text-sm font-medium text-[var(--color-primary)]">{item.lang}</span>
+          <span class="ml-2 text-xs text-[var(--color-text-secondary)]">({item.level})</span>
+        </div>
+      ))}
+    </div>
+  </CVSection>
+</PageLayout>

@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Adobe Research",
+    "role": "Research Scientist Intern",
+    "period": "Summer 2025",
+    "description": [
+      "Built evaluation pipelines for multimodal models on document and design tasks",
+      "Proposed calibration metrics that improved robustness under domain shift",
+      "Collaborated with cross-functional teams to ship internal research tooling"
+    ]
+  },
+  {
+    "company": "ByteDance",
+    "role": "Machine Learning Engineer Intern",
+    "period": "Summer 2023",
+    "description": [
+      "Developed ranking model features for recommendation systems",
+      "Reduced model serving latency by 33% through quantization and operator fusion",
+      "Implemented online-offline consistency checks for feature pipelines"
+    ]
+  },
+  {
+    "company": "Intelligent Systems Lab, Tsinghua University",
+    "role": "Research Assistant",
+    "period": "2022 - 2024",
+    "description": [
+      "Conducted research on graph learning for combinatorial decision-making",
+      "Maintained open-source optimization benchmark suite",
+      "Mentored junior students on reproducible ML experiment design"
+    ]
+  }
+]

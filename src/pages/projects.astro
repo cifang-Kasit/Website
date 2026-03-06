@@ -1,0 +1,26 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import profile from '../data/profile.json';
+import projects from '../data/projects.json';
+---
+
+<PageLayout title={`${profile.name} - Projects`} description="Selected projects, demos, and code repositories">
+  <h1 class="mb-4 text-2xl font-bold text-[var(--color-primary)]">Projects</h1>
+  <p class="mb-8 max-w-3xl leading-relaxed text-[var(--color-text-secondary)]">
+    A selection of projects across machine learning systems, optimization, and developer tools.
+    Each entry includes a short description, technical tags, and links to code, demos, or papers.
+  </p>
+
+  <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+    {projects.map((project) => (
+      <ProjectCard
+        title={project.title}
+        description={project.description}
+        image={project.image}
+        tags={project.tags}
+        links={project.links}
+      />
+    ))}
+  </div>
+</PageLayout>

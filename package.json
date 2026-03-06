@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check:phase": "node phase-check.mjs",
+    "check:phase:projects": "node phase-check.mjs phase3-projects",
+    "check:phase:blog": "node phase-check.mjs phase3-blog",
+    "check:phase:responsive": "node phase-check.mjs phase4-responsive",
+    "check:phase:seo": "node phase-check.mjs phase4-seo",
+    "check:phase:deploy": "node phase-check.mjs phase4-deploy",
+    "check:phase:content": "node phase-check.mjs phase4-content"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

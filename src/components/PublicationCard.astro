@@ -1,0 +1,86 @@
+---
+interface Props {
+  title: string;
+  authors: string[];
+  venue: string;
+  year: number;
+  type: string;
+  badge: string | null;
+  links: {
+    pdf: string | null;
+    code: string | null;
+    project: string | null;
+  };
+}
+
+const { title, authors, venue, badge, links } = Astro.props;
+
+const badgeStyles: Record<string, string> = {
+  Oral: 'bg-[var(--color-badge-oral)] text-white',
+  Poster: 'bg-[var(--color-badge-poster)] text-white',
+  Spotlight: 'bg-purple-500 text-white',
+  'Best Paper': 'bg-[var(--color-badge-best)] text-white',
+};
+
+function renderAuthor(author: string) {
+  if (author.startsWith('**') && author.endsWith('**')) {
+    return author.slice(2, -2);
+  }
+  return null;
+}
+---
+
+<div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4 transition-shadow hover:shadow-md">
+  <h4 class="mb-1 font-semibold text-[var(--color-primary)]">
+    {links.pdf ? (
+      <a href={links.pdf} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-accent)] no-underline">
+        {title}
+      </a>
+    ) : (
+      title
+    )}
+  </h4>
+
+  <p class="mb-2 text-sm text-[var(--color-text-secondary)]">
+    {authors.map((author, i) => (
+      <>
+        {renderAuthor(author) ? (
+          <strong class="text-[var(--color-text)]">{renderAuthor(author)}</strong>
+        ) : (
+          <span>{author}</span>
+        )}
+        {i < authors.length - 1 && ', '}
+      </>
+    ))}
+  </p>
+
+  <div class="flex flex-wrap items-center gap-2">
+    <span class="text-sm font-medium text-[var(--color-accent-dark)]">{venue}</span>
+    {badge && (
+      <span class:list={['rounded px-1.5 py-0.5 text-xs font-medium', badgeStyles[badge] || 'bg-gray-200 text-gray-700']}>
+        {badge}
+      </span>
+    )}
+  </div>
+
+  <div class="mt-2 flex flex-wrap gap-2">
+    {links.pdf && (
+      <a href={links.pdf} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded border border-[var(--color-border)] px-2 py-0.5 text-xs font-medium text-[var(--color-text-secondary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-dark)] no-underline">
+        <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        PDF
+      </a>
+    )}
+    {links.code && (
+      <a href={links.code} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded border border-[var(--color-border)] px-2 py-0.5 text-xs font-medium text-[var(--color-text-secondary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-dark)] no-underline">
+        <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        Code
+      </a>
+    )}
+    {links.project && (
+      <a href={links.project} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded border border-[var(--color-border)] px-2 py-0.5 text-xs font-medium text-[var(--color-text-secondary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-dark)] no-underline">
+        <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        Project
+      </a>
+    )}
+  </div>
+</div>

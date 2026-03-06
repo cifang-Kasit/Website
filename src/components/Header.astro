@@ -1,0 +1,97 @@
+---
+import profile from '../data/profile.json';
+
+const navLinks = [
+  { href: '/', label: 'HOME' },
+  { href: '/cv/', label: 'CV' },
+  { href: '/research/', label: 'RESEARCH' },
+  { href: '/projects/', label: 'PROJECTS' },
+  { href: '/publications/', label: 'PUBLICATIONS' },
+  { href: '/blog/', label: 'BLOG' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-[var(--color-primary)] shadow-md">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-8">
+    <a href="/" class="text-base font-bold tracking-wide text-white no-underline hover:text-[var(--color-accent)] sm:text-lg">
+      {profile.name}
+    </a>
+
+    <button
+      id="mobile-menu-btn"
+      class="text-white lg:hidden"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <ul class="hidden items-center gap-1 lg:flex">
+      {navLinks.map(({ href, label }) => {
+        const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+        return (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                'rounded px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors no-underline',
+                isActive
+                  ? 'bg-[var(--color-accent)] text-white'
+                  : 'text-gray-200 hover:bg-white/10 hover:text-white',
+              ]}
+            >
+              {label}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </nav>
+
+  <div id="mobile-menu" class="hidden border-t border-white/10 lg:hidden">
+    <ul class="flex flex-col px-4 py-2">
+      {navLinks.map(({ href, label }) => {
+        const isActive = currentPath === href || (href !== '/' && currentPath.startsWith(href));
+        return (
+          <li>
+            <a
+              href={href}
+              class:list={[
+                'block rounded px-3 py-2 text-sm font-medium uppercase tracking-wider transition-colors no-underline',
+                isActive
+                  ? 'bg-[var(--color-accent)] text-white'
+                  : 'text-gray-200 hover:bg-white/10 hover:text-white',
+              ]}
+            >
+              {label}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const mobileLinks = menu?.querySelectorAll('a');
+
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
+
+  mobileLinks?.forEach((link) => {
+    link.addEventListener('click', () => {
+      btn?.setAttribute('aria-expanded', 'false');
+      menu?.classList.add('hidden');
+    });
+  });
+</script>

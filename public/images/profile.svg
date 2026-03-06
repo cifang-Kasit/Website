@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Lin Zhang profile</title>
+  <desc id="desc">Profile avatar with initials LZ on a teal background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#18BC9C" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)" />
+  <circle cx="300" cy="300" r="210" fill="#ffffff" fill-opacity="0.12" />
+  <text
+    x="300"
+    y="355"
+    text-anchor="middle"
+    font-size="180"
+    font-family="Inter, Arial, sans-serif"
+    font-weight="700"
+    fill="#ffffff"
+  >
+    LZ
+  </text>
+</svg>

@@ -1,0 +1,47 @@
+---
+interface Paper {
+  title: string;
+  url: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  keywords: string[];
+  papers: Paper[];
+}
+
+const { title, description, image, keywords, papers } = Astro.props;
+---
+
+<div class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] transition-shadow hover:shadow-lg">
+  <img src={image} alt={title} class="h-48 w-full object-cover" />
+  <div class="p-5">
+    <h3 class="mb-2 text-lg font-bold text-[var(--color-primary)]">{title}</h3>
+    <p class="mb-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">{description}</p>
+
+    <div class="mb-3 flex flex-wrap gap-1.5">
+      {keywords.map((kw) => (
+        <span class="rounded-full bg-[var(--color-accent)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--color-accent-dark)]">
+          {kw}
+        </span>
+      ))}
+    </div>
+
+    {papers.length > 0 && (
+      <div class="border-t border-[var(--color-border)] pt-3">
+        <p class="mb-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">Related Papers</p>
+        <ul class="space-y-1">
+          {papers.map((paper) => (
+            <li class="text-sm">
+              <a href={paper.url} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-accent)]">
+                {paper.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+</div>

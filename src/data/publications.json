@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Representation Alignment for Scientific Multimodal Models",
+    "authors": ["Mia Sun", "**Lin Zhang**", "Daniel Kim"],
+    "venue": "ICML 2026",
+    "year": 2026,
+    "type": "conference",
+    "badge": "Oral",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2602.12345",
+      "code": "https://github.com/linzhang-ai/scimodal-align",
+      "project": null
+    }
+  },
+  {
+    "title": "Sparse Scientific Transformers for PDE Surrogates",
+    "authors": ["**Lin Zhang**", "Qian Liu", "Rajat Menon"],
+    "venue": "AAAI 2026",
+    "year": 2026,
+    "type": "conference",
+    "badge": "Poster",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2511.02311",
+      "code": "https://github.com/linzhang-ai/sparse-sci-transformer",
+      "project": "https://linzhang.ai/sparse-sci-transformer"
+    }
+  },
+  {
+    "title": "Robust Graph Policies for Combinatorial Optimization",
+    "authors": ["**Lin Zhang**", "Ethan Park", "Sofia Tang"],
+    "venue": "NeurIPS 2025",
+    "year": 2025,
+    "type": "conference",
+    "badge": "Poster",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2508.10101",
+      "code": "https://github.com/linzhang-ai/robust-graph-policy",
+      "project": "https://linzhang.ai/robust-graph-policy"
+    }
+  },
+  {
+    "title": "Scalable Optimization under Distribution Shift",
+    "authors": ["Grace Kim", "**Lin Zhang**", "Henry Wu"],
+    "venue": "ICLR 2025",
+    "year": 2025,
+    "type": "conference",
+    "badge": "Spotlight",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2502.00999",
+      "code": null,
+      "project": null
+    }
+  },
+  {
+    "title": "A Practical Survey of Neural Architecture Search in Science",
+    "authors": ["**Lin Zhang**", "Ivy Chen"],
+    "venue": "ACM Computing Surveys",
+    "year": 2024,
+    "type": "journal",
+    "badge": null,
+    "links": {
+      "pdf": "https://arxiv.org/abs/2409.08123",
+      "code": null,
+      "project": null
+    }
+  },
+  {
+    "title": "Decision-aware Reinforcement Learning for Robotic Control",
+    "authors": ["Jack Ma", "**Lin Zhang**", "Karen Zhao"],
+    "venue": "ICRA 2024",
+    "year": 2024,
+    "type": "conference",
+    "badge": "Best Paper",
+    "links": {
+      "pdf": "https://arxiv.org/abs/2403.10444",
+      "code": "https://github.com/linzhang-ai/rl-robot-control",
+      "project": "https://linzhang.ai/rl-robot-control"
+    }
+  }
+]

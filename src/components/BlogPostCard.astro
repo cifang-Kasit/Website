@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  tags: string[];
+  readTime: string;
+  href: string;
+}
+
+const { title, description, pubDate, tags, readTime, href } = Astro.props;
+---
+
+<article class="rounded-xl border border-[var(--color-border)] bg-white p-5 transition-shadow hover:shadow-md">
+  <h2 class="mb-2 text-xl font-semibold text-[var(--color-primary)]">
+    <a href={href} class="no-underline hover:text-[var(--color-accent)]">{title}</a>
+  </h2>
+
+  <div class="mb-3 flex flex-wrap items-center gap-3 text-xs text-[var(--color-text-secondary)]">
+    <time datetime={pubDate.toISOString()}>
+      {pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+    </time>
+    <span aria-hidden="true">•</span>
+    <span>{readTime}</span>
+  </div>
+
+  <p class="mb-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">{description}</p>
+
+  {tags.length > 0 && (
+    <div class="mb-4 flex flex-wrap gap-1.5">
+      {tags.map((tag) => (
+        <span class="rounded-full bg-[var(--color-accent)]/10 px-2.5 py-1 text-xs font-medium text-[var(--color-accent-dark)]">
+          {tag}
+        </span>
+      ))}
+    </div>
+  )}
+
+  <a href={href} class="text-sm font-medium no-underline">
+    Read more →
+  </a>
+</article>

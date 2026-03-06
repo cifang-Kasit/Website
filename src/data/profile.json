@@ -1,0 +1,19 @@
+{
+  "name": "Lin Zhang",
+  "title": "Ph.D. Candidate in Computer Science",
+  "affiliation": "University of California, San Diego",
+  "photo": "/images/profile.svg",
+  "email": "linzhang.cs@outlook.com",
+  "github": "linzhang-ai",
+  "scholar": "8Y2n7EAAAAAJ",
+  "phone": "+1 (858) 555-0196",
+  "address": "CSE Building, 9500 Gilman Dr, La Jolla, CA 92093, USA",
+  "quote": "Build models that are not only accurate, but useful in the real world.",
+  "bio": "I am a Ph.D. candidate at UC San Diego working on machine learning systems and decision-focused optimization. My recent work studies how representation learning and structured reasoning can improve reliability in scientific and industrial workflows.",
+  "researchInterests": [
+    "Machine Learning Systems",
+    "Decision-focused Optimization",
+    "Scientific AI"
+  ],
+  "status": "I am actively looking for 2026 research internship and full-time opportunities."
+}

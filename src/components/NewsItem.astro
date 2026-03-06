@@ -1,0 +1,56 @@
+---
+interface Props {
+  date: string;
+  content: string;
+  paperTitle: string | null;
+  paperUrl: string | null;
+  venue: string | null;
+  venueUrl: string | null;
+  badge: string | null;
+}
+
+const { date, content, paperTitle, paperUrl, venue, venueUrl, badge } = Astro.props;
+
+const badgeColors: Record<string, string> = {
+  Oral: 'bg-[var(--color-badge-oral)] text-white',
+  Poster: 'bg-[var(--color-badge-poster)] text-white',
+  Spotlight: 'bg-purple-500 text-white',
+  'Best Paper': 'bg-[var(--color-badge-best)] text-white',
+};
+---
+
+<div class="flex flex-col gap-1 border-l-2 border-[var(--color-accent)] py-3 pl-4 sm:flex-row sm:gap-4">
+  <div class="w-auto shrink-0 text-xs font-medium text-[var(--color-text-secondary)] sm:w-24 sm:text-sm">
+    {date}
+  </div>
+  <div class="text-sm leading-relaxed">
+    <span>{content}</span>
+    {(paperTitle || venue) && (
+      <span class="ml-1 inline-flex flex-wrap items-center gap-1">
+        {paperTitle && (
+          paperUrl ? (
+            <a href={paperUrl} target="_blank" rel="noopener noreferrer" class="font-medium">
+              [Paper]
+            </a>
+          ) : (
+            <span class="font-medium">[Paper]</span>
+          )
+        )}
+        {venue && (
+          venueUrl ? (
+            <a href={venueUrl} target="_blank" rel="noopener noreferrer" class="font-medium">
+              [Venue]
+            </a>
+          ) : (
+            <span class="font-medium">[Venue]</span>
+          )
+        )}
+      </span>
+    )}
+    {badge && (
+      <span class:list={['ml-1 inline-block rounded px-1.5 py-0.5 text-xs font-medium', badgeColors[badge] || 'bg-gray-200 text-gray-700']}>
+        {badge}
+      </span>
+    )}
+  </div>
+</div>

@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Decision-focused Combinatorial Optimization",
+    "description": "I develop learning-to-optimize methods for NP-hard routing and allocation problems. The goal is to improve decision quality under uncertainty while preserving practical runtime constraints.",
+    "image": "/images/research-placeholder.svg",
+    "keywords": ["Reinforcement Learning", "Graph Policies", "Operations Research"],
+    "papers": [
+      { "title": "Robust Graph Policies for Combinatorial Optimization", "url": "https://arxiv.org/abs/2508.10101" },
+      { "title": "Scalable Optimization under Distribution Shift", "url": "https://arxiv.org/abs/2502.00999" }
+    ]
+  },
+  {
+    "title": "Efficient Scientific Foundation Models",
+    "description": "I investigate sparse architectures and compression-aware training to build scientific models that are both accurate and efficient on limited compute.",
+    "image": "/images/research-placeholder.svg",
+    "keywords": ["Sparse Transformers", "Model Compression", "Hardware-aware Training"],
+    "papers": [
+      { "title": "Sparse Scientific Transformers for PDE Surrogates", "url": "https://arxiv.org/abs/2511.02311" },
+      { "title": "A Practical Survey of Neural Architecture Search in Science", "url": "https://arxiv.org/abs/2409.08123" }
+    ]
+  },
+  {
+    "title": "Multimodal Learning for Scientific Data",
+    "description": "My recent work focuses on aligning text, simulation outputs, and structured measurements into robust shared representations for downstream forecasting and control.",
+    "image": "/images/research-placeholder.svg",
+    "keywords": ["Multimodal", "Representation Learning", "Scientific ML"],
+    "papers": [
+      { "title": "Representation Alignment for Scientific Multimodal Models", "url": "https://arxiv.org/abs/2602.12345" }
+    ]
+  }
+]

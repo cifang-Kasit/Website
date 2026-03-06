@@ -1,0 +1,28 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ResearchSection from '../components/ResearchSection.astro';
+import profile from '../data/profile.json';
+import research from '../data/research.json';
+---
+
+<PageLayout title={`${profile.name} - Research`} description="Research interests and topics">
+  <h1 class="mb-4 text-2xl font-bold text-[var(--color-primary)]">Research</h1>
+
+  <p class="mb-8 leading-relaxed text-[var(--color-text-secondary)]">
+    I study machine learning methods that improve high-stakes decisions in scientific and industrial
+    settings. My work combines representation learning, structured optimization, and systems design
+    to build models that are both accurate and dependable.
+  </p>
+
+  <div class="space-y-6">
+    {research.map((topic) => (
+      <ResearchSection
+        title={topic.title}
+        description={topic.description}
+        image={topic.image}
+        keywords={topic.keywords}
+        papers={topic.papers}
+      />
+    ))}
+  </div>
+</PageLayout>

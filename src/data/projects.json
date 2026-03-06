@@ -1,0 +1,46 @@
+[
+  {
+    "title": "RouteOpt Bench",
+    "description": "A benchmark suite for learning-based vehicle routing and scheduling, with standardized datasets, baselines, and reproducibility scripts.",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["Python", "PyTorch", "Optimization"],
+    "links": {
+      "github": "https://github.com/linzhang-ai/routeopt-bench",
+      "demo": "https://linzhang.ai/routeopt-bench",
+      "paper": "https://arxiv.org/abs/2508.10101"
+    }
+  },
+  {
+    "title": "NAS-Lite",
+    "description": "A lightweight neural architecture search toolkit focused on cost-aware model selection for scientific and edge workloads.",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["AutoML", "JAX", "Model Efficiency"],
+    "links": {
+      "github": "https://github.com/linzhang-ai/nas-lite",
+      "demo": "https://linzhang.ai/nas-lite",
+      "paper": "https://arxiv.org/abs/2511.02311"
+    }
+  },
+  {
+    "title": "SciFusion",
+    "description": "A multimodal training framework for scientific machine learning with unified dataloading, alignment losses, and experiment tracking.",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["Multimodal", "PyTorch", "MLOps"],
+    "links": {
+      "github": "https://github.com/linzhang-ai/scifusion",
+      "demo": null,
+      "paper": "https://arxiv.org/abs/2602.12345"
+    }
+  },
+  {
+    "title": "Academic Portfolio Template",
+    "description": "A production-ready Astro template for researchers, including publications, projects, blog, and automated GitHub Pages deployment.",
+    "image": "/images/project-placeholder.svg",
+    "tags": ["Astro", "Tailwind CSS", "TypeScript"],
+    "links": {
+      "github": "https://github.com/linzhang-ai/academic-portfolio-template",
+      "demo": "https://linzhang-ai.github.io/academic-portfolio-template/",
+      "paper": null
+    }
+  }
+]

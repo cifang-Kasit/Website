@@ -1,0 +1,49 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import NewsTimeline from '../components/NewsTimeline.astro';
+import profile from '../data/profile.json';
+---
+
+<PageLayout title={`${profile.name} - Home`} description={profile.bio}>
+  {profile.status && (
+    <div class="mb-6 rounded-lg border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 px-4 py-3 text-sm">
+      <span class="font-medium text-[var(--color-accent-dark)]">Status:</span> {profile.status}
+    </div>
+  )}
+
+  <div class="mb-6 rounded-lg bg-[var(--color-surface)] px-4 py-3">
+    <p class="text-sm">
+      <span class="font-medium text-[var(--color-primary)]">Research Interests:</span>{' '}
+      {profile.researchInterests.join(', ')}.
+    </p>
+  </div>
+
+  <div class="mb-8 leading-relaxed text-[var(--color-text)]">
+    <p>{profile.bio}</p>
+  </div>
+
+  <div class="mb-8">
+    <h5 class="mb-2 text-sm font-semibold text-[var(--color-primary)]">Find my works:</h5>
+    <div class="flex flex-wrap gap-2">
+      <a href="/publications/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+        Publications
+      </a>
+      <a href="/research/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+        Research
+      </a>
+      <a href="/projects/" class="rounded-full border border-[var(--color-accent)] px-4 py-1.5 text-sm font-medium text-[var(--color-accent-dark)] transition-colors hover:bg-[var(--color-accent)] hover:text-white no-underline">
+        Projects
+      </a>
+    </div>
+  </div>
+
+  <NewsTimeline />
+
+  <section class="mt-8 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+    <h5 class="mb-2 text-sm font-bold text-[var(--color-primary)]">Mailing Address</h5>
+    <p class="text-sm text-[var(--color-text-secondary)]">
+      {profile.affiliation}<br />
+      {profile.address}
+    </p>
+  </section>
+</PageLayout>

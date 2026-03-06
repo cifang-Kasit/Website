@@ -1,0 +1,38 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import profile from '../data/profile.json';
+import publications from '../data/publications.json';
+
+const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
+const pubsByYear = years.map((year) => ({
+  year,
+  pubs: publications.filter((p) => p.year === year),
+}));
+---
+
+<PageLayout title={`${profile.name} - Publications`} description="Academic publications">
+  <h1 class="mb-6 text-2xl font-bold text-[var(--color-primary)]">Publications</h1>
+
+  {pubsByYear.map(({ year, pubs }) => (
+    <section class="mb-8">
+      <h2 class="mb-4 flex items-center gap-2 text-lg font-bold text-[var(--color-primary)]">
+        <span class="rounded bg-[var(--color-primary)] px-2 py-0.5 text-sm text-white">{year}</span>
+        <span class="h-px flex-1 bg-[var(--color-border)]"></span>
+      </h2>
+      <div class="space-y-3">
+        {pubs.map((pub) => (
+          <PublicationCard
+            title={pub.title}
+            authors={pub.authors}
+            venue={pub.venue}
+            year={pub.year}
+            type={pub.type}
+            badge={pub.badge}
+            links={pub.links}
+          />
+        ))}
+      </div>
+    </section>
+  ))}
+</PageLayout>

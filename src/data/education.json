@@ -1,0 +1,23 @@
+[
+  {
+    "school": "University of California, San Diego",
+    "degree": "Ph.D. in Computer Science",
+    "period": "2024 - Present",
+    "description": "Research focus on machine learning systems and decision-focused optimization.",
+    "advisor": "Prof. Julian McAuley"
+  },
+  {
+    "school": "Tsinghua University",
+    "degree": "M.S. in Data Science",
+    "period": "2022 - 2024",
+    "description": "Thesis: Learning-based Solvers for Large-scale Routing Problems.",
+    "advisor": "Prof. Wei Wang"
+  },
+  {
+    "school": "Zhejiang University",
+    "degree": "B.S. in Computer Science",
+    "period": "2018 - 2022",
+    "description": "Graduated with first-class honors. Minor in Applied Mathematics.",
+    "advisor": null
+  }
+]
